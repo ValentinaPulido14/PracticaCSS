@@ -1,0 +1,63 @@
+/*Estilos Generales*/
+body{
+    font-family: 'Times New Roman', Times, serif; /*Fuente del texto*/
+    background-color: #f4f4f4;/*Color de Fondo*/
+    display: flex; /*Usa flexbox para centrar vertical y horizontalmente la tarjeta*/
+    justify-content: center; /*Centra horizontalmente*/
+    align-items: center; /*Alinea Verticalmente*/
+    height: 100vh; /*Ocupa toda la altura de la ventana*/
+    margin: 0; /*Elimina los margenes determinados*/
+}
+ 
+/*Estilos de la tarjeta*/
+.card{
+    background-color: white; /*Fondo Blanco*/
+    width: 300px; /*Ancho fijo de la tarjeta*/
+    padding: 20px; /*Espaciado interno para separar el contenido*/
+    border-radius: 10px; /*Esquinas redondeadas*/
+    box-shadow: 10px 10px rgba(7, 7, 7, 0.1); /*Sombra ligera*/
+    text-align: center; /*Centra el texto dentro de la tarjeta*/
+    position: relative; /*Define una posicion relativa para futu*/
+}
+ 
+/*Estilos para la imagen*/
+.imagen {
+    width: 100px; /*Ancho de la imagen*/
+    height: 100px; /*Alto de la imagen*/
+    border-radius: 50%; /*Hace que la imagen sea completamente redonda*/
+    margin-bottom: 20px; /*Espaciado inferior para separar de los*/
+}
+ 
+.name {
+    font-size: 1.5rem; /*Tamaño de la fuente mas grande*/
+    margin: 5px 0; /*Espaciado superior e inferior*/  
+}
+ 
+/*Estilo Profesion*/
+.profession {
+    font-size: 1rem; /*Tamaño de fuente estandar*/
+    color: #666; /*Color de texto gris oscuro*/
+}
+ 
+/*Estilo Descripcion*/
+.description {
+    font-size: 0.8rem; /*Un poco mas pequeñp que el texto normal*/
+    margin-top: 10px; /*Espaciado Superior*/
+}
+ 
+.contact-button {
+    display: block; /*Hace que el boton ocupe todo el espacio disponible*/
+    width: 100%; /*Ocupa el 100% del ancho de la tarjeta*/
+    padding: 10px;/*Espaciado interno del boton*/
+    background-color: #058abe; /*Color de fondo azul*/
+    color: white; /*Color del texto en blanco*/
+    border: none; /*Elimina el borde predeterminado*/
+    border-radius: 5px; /*Bordes redondeados*/
+    margin-top: 15px; /*Espaciado superior*/
+    cursor: pointer; /*Cambia el cursor a mano cuando se pone el mouse*/
+    font-size: 1rem; /*Tamaño de fuente estandar*/
+}
+ 
+.contact-button:hover {
+    background-color: aqua; /*Cambia el color del boton al pasar el mouse*/
+}
