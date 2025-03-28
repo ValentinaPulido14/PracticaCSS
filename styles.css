@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 /*Estilos Generales*/
 body{
-    font-family: 'Times New Roman', Times, serif; /*Fuente del texto*/
-    background-color: #f4f4f4;/*Color de Fondo*/
+    background-color: #e1a8f8;/*Color de Fondo*/
     display: flex; /*Usa flexbox para centrar vertical y horizontalmente la tarjeta*/
     justify-content: center; /*Centra horizontalmente*/
     align-items: center; /*Alinea Verticalmente*/
@@ -10,14 +10,15 @@ body{
 }
  
 /*Estilos de la tarjeta*/
-.card{
-    background-color: white; /*Fondo Blanco*/
+.card{ 
+    background-color: rgb(201, 124, 211); /*Fondo Blanco*/
     width: 300px; /*Ancho fijo de la tarjeta*/
     padding: 20px; /*Espaciado interno para separar el contenido*/
     border-radius: 10px; /*Esquinas redondeadas*/
-    box-shadow: 10px 10px rgba(7, 7, 7, 0.1); /*Sombra ligera*/
+    box-shadow: 15px 15px 5px rgba(119, 6, 153, 0.1); /*Sombra ligera*/
     text-align: center; /*Centra el texto dentro de la tarjeta*/
     position: relative; /*Define una posicion relativa para futu*/
+    border: 2px dotted #ddd; /*Borde de puntos*/
 }
  
 /*Estilos para la imagen*/
@@ -26,38 +27,60 @@ body{
     height: 100px; /*Alto de la imagen*/
     border-radius: 50%; /*Hace que la imagen sea completamente redonda*/
     margin-bottom: 20px; /*Espaciado inferior para separar de los*/
+    border: 3px solid #8a17be; /*Borde solido color morado*/
+    box-shadow: 4px 4px 10px #8a17be; /*Sombra para un efecto flotante*/
 }
  
 .name {
     font-size: 1.5rem; /*Tamaño de la fuente mas grande*/
     margin: 5px 0; /*Espaciado superior e inferior*/  
+    font-weight: 600; /*Hace la letra mas gruesa*/
+    letter-spacing: 2px; /*Aumenta el espaciado entre letras*/
 }
  
 /*Estilo Profesion*/
 .profession {
-    font-size: 1rem; /*Tamaño de fuente estandar*/
+    font-size: 1.2rem; /*Tamaño de fuente estandar*/
     color: #666; /*Color de texto gris oscuro*/
+    font-family: "Dancing Script", cursive; /* Fuente de Google Fonts */
 }
  
 /*Estilo Descripcion*/
 .description {
-    font-size: 0.8rem; /*Un poco mas pequeñp que el texto normal*/
+    font-size: 1rem; /*Un poco mas pequeñp que el texto normal*/
     margin-top: 10px; /*Espaciado Superior*/
+    font-family: "Dancing Script", cursive; /* Fuente de Google Fonts */
 }
  
 .contact-button {
     display: block; /*Hace que el boton ocupe todo el espacio disponible*/
     width: 100%; /*Ocupa el 100% del ancho de la tarjeta*/
     padding: 10px;/*Espaciado interno del boton*/
-    background-color: #058abe; /*Color de fondo azul*/
+    background-color: #77018f; /*Color de fondo azul*/
     color: white; /*Color del texto en blanco*/
     border: none; /*Elimina el borde predeterminado*/
     border-radius: 5px; /*Bordes redondeados*/
     margin-top: 15px; /*Espaciado superior*/
     cursor: pointer; /*Cambia el cursor a mano cuando se pone el mouse*/
     font-size: 1rem; /*Tamaño de fuente estandar*/
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s ease, transform 0.3s ease; /*Transicion para que el cambio de color y tamaño sea suave */
 }
  
 .contact-button:hover {
-    background-color: aqua; /*Cambia el color del boton al pasar el mouse*/
+    background-color: rgb(170, 81, 192); /*Cambia el color del boton al pasar el mouse*/
+    transform: scale(1.1); /*Aumenta el tamaño del boton un 10%*/
 }
+
+.link {
+    display: block; /*Hace que el enlace ocupe todo el espacio disponible*/
+    margin-top: 15px; /*Espaciado superior*/
+    font-size: 20px; /*Tamaño de la fuente*/
+    text-decoration: none; /*Elimina el subrayado predeterminado del enlace*/
+    color: #000000; /*Color del enlace*/
+    transition: color 0.3s ease; /*Hace que el cambio de color sea suave*/
+  }
+  
+  .link:hover {
+    color: #7200a7; /*Cuando pasa el mouse por encima se cambia al color elegido*/
+  }
